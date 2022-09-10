@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link href="ranger_nombres.css" rel="stylesheet" type="text/css">
+        <title>Ranger les nombres</title>
+    </head>
+
+<body>
+	
+	<header class="titre">
+			<h1><a href="ranger.ods">Ranger les nombres</a></h1>
+			<div id="rangerOrdre">
+				<div>
+					<input id="radioButton1" type="radio" checked="checked" name="orderType">
+					<label for="radioButton1">Croissant</label>
+				</div>
+				<div>
+					<input id="radioButton2" type="radio" name="orderType">
+					<label for="radioButton2">Décroissant</label>
+				</div>
+			</div>
+			<p></p>
+			<div style="display: flex; justify-content: space-evenly;">
+				<div class="cartouchesParametres" style="background-color: #CCF19F;">
+					<span>Intervalle de</span>
+					<input type="text" name="intervalle_bas" id="intervalle_bas" size=1>
+					<input class="cartouchesParametres" type="submit" id="submit_intervalle_bas" value="ok" >					
+					<span id="affichage_intervalle_bas"></span>
+				</div>
+				<div class="cartouchesParametres" style="background-color: #BBE8F2;">
+					<span>à</span>
+					<input type="text" name="intervalle_haut" id="intervalle_haut" size=1>
+					<input class="cartouchesParametres" type="submit" id="submit_intervalle_haut" value="ok">					
+					<span id="affichage_intervalle_haut"></span>
+				</div>
+				<div class="cartouchesParametres" style="background-color: #F7F59F;">
+					<span>Combien de nombres à ranger</span>
+					<input type="text" name="combien_nombres_a_ranger" id="combien_nombres_a_ranger" size=1>
+					<input class="cartouchesParametres" type="submit" id="submit_combien_nombres_a_ranger" value="ok" >
+					<span id="affichage_combien_nombres_a_ranger"></span>
+				</div>
+				<button class="cartouchesParametres" onclick="getRandomNumbers(combienDeNombres)">Commencer</button>
+			</div>						
+	</header>
+	
+	<main>
+		
+		<div id="input_bases"></div>
+		
+		<p id="affichage_nombres"></p>
+		
+	</main>	
+						
+	<script src="ranger_nombres.js"></script>
+	
+</body>
+
+</html>

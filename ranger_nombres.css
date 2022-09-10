@@ -1,0 +1,33 @@
+.titre {
+text-align: center;
+}
+
+#affichage_nombres {
+border: 1px solid black;
+font-size: 50px;
+text-align: center;
+}
+
+body {
+background-color: white;
+}
+
+#input_bases {
+font-size: 30px;
+display: flex;
+margin: 10px;
+background-color: white;
+justify-content: center;
+flex-wrap: wrap;
+}
+
+#box {
+text-align: center;
+}
+
+.cartouchesParametres {
+border-radius: 30px;
+padding: 10px;
+}
+
+
